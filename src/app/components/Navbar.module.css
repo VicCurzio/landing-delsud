@@ -1,113 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .navbar-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 35px 30px;
-  background-color: #f0f0f0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px 30px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar-logo h1 {
-  margin: 0;
-  font-size: 24px;
-  color: #333;
-  /* Si usas una imagen de logo, podrías estilizar el img directamente aquí */
+    margin: 0;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-family: 'Montserrat';
+}
+
+.logo-rectangle {
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
 }
 
 .navbar-nav {
-  display: flex;
-  gap: 150px;
-  align-items: center;
+    display: flex;
+    gap: 150px;
+    align-items: center;
 }
 
 .navbar-menu,
 .navbar-lang-switcher {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.navbar-menu li a,
+.navbar-menu li {
+    /* ... (sin cambios aquí) ... */
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.navbar-menu li a:hover {
+    color: #0070f3;
+    background-color: #e0e0e0;
+}
+
+/* --- Estilos ESPECÍFICOS para el selector de idioma (EN | ES | BR) --- */
+
+.navbar-lang-switcher li {
+    position: relative;
+    padding: 0 5px;
+}
+
+.navbar-lang-switcher li:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
 .navbar-lang-switcher li a {
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  padding: 5px 10px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  border-radius: 4px;
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0;
 }
 
-.navbar-menu li a:hover,
 .navbar-lang-switcher li a:hover {
-  color: #0070f3;
-  background-color: #e0e0e0;
-}
-
-/* Estilos específicos para el idioma activo (si quieres implementarlo) */
-.navbar-lang-switcher li a.active {
-  font-weight: bold;
-  color: #000;
-  background-color: #d0d0d0; /* Fondo para el idioma activo */
+    color: #333;
+    background-color: transparent;
 }
 
 
 /* --- Media Queries para Responsividad --- */
 
-/* En pantallas más pequeñas (tablets y móviles) */
 @media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column; /* Apila los elementos verticalmente (logo arriba, navegación abajo) */
-    align-items: flex-start; /* Alinea todo a la izquierda cuando están apilados */
-    padding: 15px 20px; /* Ajusta el padding para pantallas más pequeñas */
-  }
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
 
-  .navbar-logo {
-    width: 100%; /* Ocupa todo el ancho para el logo */
-    text-align: center; /* Centra el logo si quieres en móvil */
-    margin-bottom: 15px; /* Espacio debajo del logo */
-  }
+    .navbar-logo {
+        flex-direction: row;
+        /* Mantener en fila en mobile si quieres que el cuadrado siga al lado del logo */
+        width: 100%;
+        justify-content: center;
+        /* Centrar el logo y el cuadrado en mobile */
+        margin-bottom: 15px;
+    }
 
-  .navbar-nav {
-    flex-direction: column; /* Apila los grupos de navegación (menú y selector de idioma) */
-    gap: 15px; /* Ajusta el espacio entre los grupos apilados */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    align-items: flex-start; /* Alinea los grupos a la izquierda */
-  }
+    .navbar-logo h1 {
+        text-align: center;
+        /* Centrar texto h1 */
+    }
 
-  .navbar-menu,
-  .navbar-lang-switcher {
-    flex-direction: column; /* Apila los ítems individuales de cada lista */
-    gap: 10px; /* Espacio entre los ítems apilados */
-    width: 100%; /* Ocupa todo el ancho para los ítems de la lista */
-  }
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
 
-  .navbar-menu li,
-  .navbar-lang-switcher li {
-    width: 100%; /* Hace que cada ítem de lista ocupe todo el ancho */
-  }
+    .navbar-menu,
+    .navbar-lang-switcher {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
 
-  .navbar-menu li a,
-  .navbar-lang-switcher li a {
-    display: block; /* Para que el padding y el área clickable ocupen todo el ancho del li */
-    text-align: center; /* Centra el texto de los enlaces en móvil */
-    padding: 10px; /* Aumenta el padding para mayor facilidad de clic */
-    background-color: #eee; /* Un fondo para cada ítem en móvil */
-  }
+    .navbar-menu li,
+    .navbar-lang-switcher li {
+        width: 100%;
+    }
+
+    .navbar-menu li a,
+    .navbar-lang-switcher li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: #eee;
+    }
+
+    .navbar-lang-switcher li:not(:last-child)::after {
+        content: none;
+    }
 }
 
-/* Puedes añadir más media queries si necesitas puntos de quiebre adicionales */
-/* Por ejemplo, para pantallas muy pequeñas */
 @media (max-width: 480px) {
-  .navbar-logo h1 {
-    font-size: 20px;
-  }
-  .navbar-container {
-    padding: 10px 15px;
-  }
+    .navbar-logo h1 {
+        font-size: 20px;
+    }
+
+    .navbar-container {
+        padding: 10px 15px;
+    }
 }

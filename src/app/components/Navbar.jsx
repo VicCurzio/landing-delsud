@@ -5,6 +5,7 @@ export default function Navbar() {
     return (
         <header className={styles['navbar-container']}>
             <div className={styles['navbar-logo']}>
+                <div className={styles['logo-rectangle']}></div>
                 <h1>LOGO EMPRESA</h1>
             </div>
             <nav className={styles['navbar-nav']}>
