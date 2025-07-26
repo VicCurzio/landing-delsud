@@ -1,3 +1,4 @@
+import ContentSection from "./components/ContentSection";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <ContentSection />
       </main>
     </>
   );
