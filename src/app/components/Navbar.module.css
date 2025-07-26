@@ -47,29 +47,16 @@
     display: flex;
 }
 
-.navbar-menu li {
-    /* ... (sin cambios aquí) ... */
-}
-
 .navbar-menu li a {
     text-decoration: none;
     color: #666;
     font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px 15px;
     border-radius: 4px;
 }
 
-.navbar-menu li a:hover {
-    color: #0070f3;
-    background-color: #e0e0e0;
-}
-
-/* --- Estilos ESPECÍFICOS para el selector de idioma (EN | ES | BR) --- */
-
 .navbar-lang-switcher li {
     position: relative;
-    padding: 0 5px;
 }
 
 .navbar-lang-switcher li:not(:last-child)::after {
@@ -84,14 +71,16 @@
 .navbar-lang-switcher li a {
     text-decoration: none;
     color: #666;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 0;
+    font-weight: 700;
+    padding: 0 5px;
+    border-radius: 4px;
 }
 
-.navbar-lang-switcher li a:hover {
-    color: #333;
-    background-color: transparent;
+.navbar-menu li a:hover,
+.navbar-menu li a:focus,
+.navbar-lang-switcher li a:hover,
+.navbar-lang-switcher li a:focus {
+    color: var(--primary-color);
 }
 
 
@@ -106,16 +95,13 @@
 
     .navbar-logo {
         flex-direction: row;
-        /* Mantener en fila en mobile si quieres que el cuadrado siga al lado del logo */
         width: 100%;
         justify-content: center;
-        /* Centrar el logo y el cuadrado en mobile */
         margin-bottom: 15px;
     }
 
     .navbar-logo h1 {
         text-align: center;
-        /* Centrar texto h1 */
     }
 
     .navbar-nav {
