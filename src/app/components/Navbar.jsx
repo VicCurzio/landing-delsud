@@ -8,10 +8,11 @@ import styles from './Navbar.module.css';
 export default function Navbar() {
     const [activeLang, setActiveLang] = useState('ES');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isItemsOpen, setIsItemsOpen] = useState(false);
+    const [isLanguagesOpen, setIsLanguagesOpen] = useState(false);
 
     const handleLangClick = (lang) => {
         setActiveLang(lang);
-        // Opcional: Si clickea un idioma, cierra el menú móvil
         if (isMenuOpen) {
             setIsMenuOpen(false);
         }
@@ -40,12 +41,15 @@ export default function Navbar() {
                     <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Item 2</Link></li>
                     <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Item 3</Link></li>
                 </ul>
+
+                <div className={styles['divider']}></div>
+
                 <ul className={styles['navbar-lang-switcher']}>
                     <li>
                         <Link
                             href="#"
                             onClick={() => handleLangClick('EN')}
-                            className={`${activeLang === 'EN' ? styles['lang-selected'] : ''} ${activeLang === 'EN' ? styles['current-lang-active'] : ''}`}
+                            className={`${activeLang === 'EN' ? styles['current-lang-active'] : ''}`}
                         >
                             EN
                         </Link>
