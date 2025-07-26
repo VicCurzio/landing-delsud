@@ -36,33 +36,34 @@
 
 @media (max-width: 768px) {
     .heroContainer {
-        height: 400px;
-        /* Reduce la altura en pantallas más pequeñas */
+        height: 70vh;
     }
 
     .heroContent {
-        max-width: 90%;
-        /* Aumenta el ancho del texto en pantallas pequeñas */
+        max-width: 80%;
         margin: 0 auto;
-        /* Centra el contenido horizontalmente */
         text-align: center;
-        /* Centra el texto en pantallas pequeñas */
         padding: 15px;
-        /* Ajusta el padding para móviles */
     }
 
     .heroContent h1 {
-        font-size: 1.8rem;
-        /* Reduce el tamaño de fuente en pantallas más pequeñas */
+        font-size: 1.6rem;
+        line-height: 1.4;
     }
 }
 
 @media (max-width: 480px) {
     .heroContainer {
-        height: 300px;
+        height: 52vh;
+    }
+
+    .heroContent {
+        max-width: 90%;
+        padding: 10px;
     }
 
     .heroContent h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.3;
     }
 }
