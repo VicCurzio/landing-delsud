@@ -8,8 +8,6 @@ import styles from './Navbar.module.css';
 export default function Navbar() {
     const [activeLang, setActiveLang] = useState('ES');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isItemsOpen, setIsItemsOpen] = useState(false);
-    const [isLanguagesOpen, setIsLanguagesOpen] = useState(false);
 
     const handleLangClick = (lang) => {
         setActiveLang(lang);
