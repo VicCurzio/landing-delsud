@@ -4,27 +4,23 @@ import Image from 'next/image';
 export default function ContentSection() {
     return (
         <section className={styles.contentSectionContainer}>
-            <div className={styles.textContent}>
-                <p>
-                    <span className={styles.primaryColor}>Lorem ipsum dolor sit amet consectetur</span> aliquet imperdiet
-                    penatibus donec velit. A
-                    faucibus eget et vulputate dapibus congue enim massa.. Sem semper
-                    odio volutpat<span className={styles.primaryColor}> risus platea nulla diam id dis..</span>
-                </p>
-            </div>
+            <p className={styles.textContent}>
+                <span className={`${styles.primaryColor} ${styles.boldText}`}>Lorem ipsum dolor sit amet consectetur
+                </span> aliquet imperdiet
+                <span className={styles.boldText}> penatibus donec velit.</span> A faucibus eget et vulputate dapibus congue enim massa.. Sem semper
+                odio volutpat<span className={`${styles.primaryColor} ${styles.boldText}`}> risus platea nulla diam id dis..</span>
+            </p>
 
-            <div className={styles.iconWrapper}>
-                <Image
-                    src="/dna.png"
-                    alt="icona de ADN"
-                    width={60}
-                    height={60}
-                    className={styles.icon}
-                />
-            </div>
+            <Image
+                src="/dna.png"
+                alt="icona de ADN"
+                width={30}
+                height={40}
+                className={styles.icon}
+            />
 
             <h2 className={styles.sectionTitle}>
-                Esto <span className={styles.primaryColor}>titula</span> una sección
+                Esto <span className={`${styles.primaryColor} ${styles.WeightText}`}>titula</span> una sección
             </h2>
         </section>
     )

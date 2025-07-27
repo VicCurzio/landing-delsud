@@ -13,7 +13,7 @@ export default function Hero() {
             <div className={styles.heroContent}>
                 <h1>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit interdum, <span className={styles.primaryColor}>ac aliquet odio mattis.</span>
+                    Nunc vulputate libero et velit <span className={styles.primaryColor}>interdum, ac aliquet odio mattis.</span>
                 </h1>
             </div>
         </section>
