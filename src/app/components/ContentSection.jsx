@@ -1,5 +1,7 @@
-import styles from '../styles/ContentSection.module.css';
 import Image from 'next/image';
+
+import CardsSection from './CardsSection';
+import styles from '../styles/ContentSection.module.css';
 
 export default function ContentSection() {
     return (
@@ -22,6 +24,8 @@ export default function ContentSection() {
             <h2 className={styles.sectionTitle}>
                 Esto <span className={`${styles.primaryColor} ${styles.WeightText}`}>titula</span> una sección
             </h2>
+
+            <CardsSection />
         </section>
     )
 }

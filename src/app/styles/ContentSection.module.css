@@ -29,7 +29,7 @@
 .sectionTitle {
     font-weight: 400;
     font-size: 30px;
-    margin-top: 45px
+    margin: 45px 0;
 }
 
 /* --- Media Queries --- */
