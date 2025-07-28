@@ -14,7 +14,7 @@ export default function Card({ imgSrc, altText, title }) {
                     objectFit="cover"
                 />
             </div>
-            <p className={styles.cardTitle}>{title}</p>
+            <h2 className={styles.cardTitle}>{title}</h2>
         </div>
     )
 }
