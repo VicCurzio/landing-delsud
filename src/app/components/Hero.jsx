@@ -7,8 +7,11 @@ export default function Hero() {
             <Image
                 src="/image.png"
                 alt="Maquinaria agrícola en el campo"
-                layout="fill"
+                fill
                 className={styles.heroImage}
+                style={{ objectFit: 'cover' }}
+                sizes="100vw"
+                priority={true}
             />
             <div className={styles.heroContent}>
                 <h1>

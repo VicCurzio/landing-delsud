@@ -1,10 +1,6 @@
-// src/components/Footer.js
 import Link from 'next/link';
-// Importa Image si necesitas una imagen para el logo, pero por la descripción parece que es un div + h1
-// import Image from 'next/image';
 import styles from '../styles/Footer.module.css';
 
-// Componentes para los íconos SVG (sin cambios)
 const InstagramIcon = () => (
     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.8972 5.25115C14.5195 5.25115 15.024 4.74666 15.024 4.12435C15.024 3.50204 14.5195 2.99756 13.8972 2.99756C13.2749 2.99756 12.7704 3.50204 12.7704 4.12435C12.7704 4.74666 13.2749 5.25115 13.8972 5.25115Z" fill="white" />
@@ -33,13 +29,11 @@ const TwitterXIcon = () => (
     </svg>
 );
 
-
 export default function Footer() {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContent}>
                 <div className={styles.logoSection}>
-                    {/* Estructura del logo similar a la del Navbar */}
                     <div className={styles['logo-rectangle']}></div>
                     <h1 className={styles.bussines}>LOGO EMPRESA</h1>
                 </div>
