@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import styles from '../styles/FAQ.module.css';
-import AccordionItem from './AccordionItem';
+import styles from './FAQ.module.css';
+import AccordionItem from './Accordion/AccordionItem';
 
-export default function FAQSection() {
+export default function FAQ() {
     const [openIndices, setOpenIndices] = useState([]);
 
     const faqs = [

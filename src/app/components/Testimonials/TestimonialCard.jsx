@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/Testimonials.module.css';
+import styles from './Testimonials.module.css';
 
 export default function TestimonialCard({ avatarSrc, name, company, testimonialText }) {
     return (

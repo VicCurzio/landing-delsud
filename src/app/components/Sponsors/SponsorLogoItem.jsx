@@ -1,6 +1,6 @@
-import styles from '../styles/Sponsors.module.css';
+import styles from './Sponsors.module.css';
 
-export default function SponsorLogoItem ({ svgComponent, alt }) {
+export default function SponsorLogoItem({ svgComponent, alt }) {
     return (
         <div className={styles.logoItem}>
             <span className={styles.sponsorSvgWrapper}>

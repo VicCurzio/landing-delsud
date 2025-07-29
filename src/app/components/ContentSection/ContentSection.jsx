@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import CardsSection from './CardsSection';
-import styles from '../styles/ContentSection.module.css';
+import styles from './ContentSection.module.css';
+import CardsSection from '../Card/CardsSection/CardsSection';
 
 export default function ContentSection() {
     return (

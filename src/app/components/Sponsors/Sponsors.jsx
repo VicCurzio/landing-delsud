@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import styles from '../styles/Sponsors.module.css';
-import DelsudLogo from './DelsudLogo';
+
+import styles from './Sponsors.module.css';
+import DelsudLogo from '../DelsudLogo/DelsudLogo';
 import SponsorLogoItem from './SponsorLogoItem';
 import SponsorCarousel from './SponsorCarousel';
 

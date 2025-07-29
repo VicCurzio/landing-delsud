@@ -1,4 +1,4 @@
-import styles from '../styles/InfoBanner.module.css';
+import styles from './InfoBanner.module.css';
 
 export default function InfoBanner() {
     return (

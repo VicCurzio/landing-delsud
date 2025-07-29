@@ -1,11 +1,11 @@
-import ContentSection from "./components/ContentSection";
-import FAQ from "./components/Faq";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import InfoBanner from "./components/InfoBanner";
-import Navbar from "./components/Navbar";
-import Sponsors from "./components/Sponsors";
-import Testimonials from "./components/Testimonials";
+import ContentSection from "./components/ContentSection/ContentSection";
+import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
+import InfoBanner from "./components/InfoBanner/InfoBanner";
+import Navbar from "./components/Navbar/Navbar";
+import Sponsors from "./components/Sponsors/Sponsors";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 export default function Home() {
   return (

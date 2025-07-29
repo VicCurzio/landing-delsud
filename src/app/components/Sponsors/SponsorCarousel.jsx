@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import styles from '../styles/Sponsors.module.css';
+
+import styles from './Sponsors.module.css';
 import SponsorLogoItem from './SponsorLogoItem';
 
 export default function SponsorCarousel({ sponsorLogos }) {

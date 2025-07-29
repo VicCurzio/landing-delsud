@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import styles from '../styles/Testimonials.module.css';
+import styles from './Testimonials.module.css';
 import TestimonialCard from './TestimonialCard';
 
-export default function TestimonialsSection() {
+export default function Testimonials() {
     const [isMobile, setIsMobile] = useState(false);
     const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 

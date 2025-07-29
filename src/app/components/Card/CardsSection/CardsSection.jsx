@@ -1,5 +1,5 @@
-import Card from './Card';
-import styles from '../styles/CardsSection.module.css';
+import Card from '../Card';
+import styles from './CardsSection.module.css';
 
 const cardData = [
     {

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/Footer.module.css';
+import styles from './Footer.module.css';
 
 const InstagramIcon = () => (
     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,42 +29,18 @@ const TwitterXIcon = () => (
     </svg>
 );
 
-export default function Footer() {
+export default function SocialIcons() {
     return (
-        <footer className={styles.footerContainer}>
-            <div className={styles.footerContent}>
-                <div className={styles.logoSection}>
-                    <div className={styles['logo-rectangle']}></div>
-                    <h1 className={styles.bussines}>LOGO EMPRESA</h1>
-                </div>
-
-                <div className={styles.menuSection}>
-                    <h3>Menú</h3>
-                    <ul>
-                        <li><Link href="/">Item 1</Link></li>
-                        <li><Link href="/">Item 2</Link></li>
-                        <li><Link href="/">Item 3</Link></li>
-                    </ul>
-                </div>
-
-                <div className={styles.contactSection}>
-                    <h3>Contacto</h3>
-                    <p className={styles.email}>
-                        <span className={styles.emailIcon}>@</span>correo@empresa.com
-                    </p>
-                    <div className={styles.socialIcons}>
-                        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                            <div className={styles.socialIcon}><InstagramIcon /></div>
-                        </Link>
-                        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <div className={styles.socialIcon}><LinkedinIcon /></div>
-                        </Link>
-                        <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <div className={styles.socialIcon}><TwitterXIcon /></div>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <div className={styles.socialIcons}>
+            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <div className={styles.socialIcon}><InstagramIcon /></div>
+            </Link>
+            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <div className={styles.socialIcon}><LinkedinIcon /></div>
+            </Link>
+            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <div className={styles.socialIcon}><TwitterXIcon /></div>
+            </Link>
+        </div>
     );
 }

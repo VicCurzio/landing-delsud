@@ -1,7 +1,7 @@
 'use client';
 
-import styles from '../styles/FAQ.module.css';
-import { ArrowUpIcon, ArrowDownIcon } from './AccordionIcons';
+import styles from '../FAQ.module.css';
+import { ArrowDownIcon, ArrowUpIcon } from './AccordionIcons';
 
 export default function AccordionItem({ question, answer, isOpen, toggleAccordion }) {
     return (
