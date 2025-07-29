@@ -62,6 +62,13 @@ export default function TestimonialsSection() {
 
             {isMobile ? (
                 <div className={styles.mobileCarouselWrapper}>
+                    <TestimonialCard
+                        avatarSrc={testimonials[currentTestimonialIndex].avatarSrc}
+                        name={testimonials[currentTestimonialIndex].name}
+                        company={testimonials[currentTestimonialIndex].company}
+                        testimonialText={testimonials[currentTestimonialIndex].testimonialText}
+                    />
+                    <div className={styles.mobileArrowsWrapper}>
                     <button
                         className={styles.carouselArrow}
                         onClick={showPrevTestimonial}
@@ -69,12 +76,6 @@ export default function TestimonialsSection() {
                     >
                         &larr;
                     </button>
-                    <TestimonialCard
-                        avatarSrc={testimonials[currentTestimonialIndex].avatarSrc}
-                        name={testimonials[currentTestimonialIndex].name}
-                        company={testimonials[currentTestimonialIndex].company}
-                        testimonialText={testimonials[currentTestimonialIndex].testimonialText}
-                    />
                     <button
                         className={styles.carouselArrow}
                         onClick={showNextTestimonial}
@@ -82,6 +83,7 @@ export default function TestimonialsSection() {
                     >
                         &rarr;
                     </button>
+                    </div>
                 </div>
             ) : (
                 <>

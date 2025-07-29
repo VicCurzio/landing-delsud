@@ -135,7 +135,6 @@
     }
 
     .testimonialCard {
-        padding: 20px;
         max-width: 90%;
     }
 
@@ -145,6 +144,14 @@
 
     .testimonialText {
         font-size: 1rem;
+    }
+
+    .mobileArrowsWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
     }
 }
 
@@ -160,18 +167,26 @@
     }
 
     .mobileCarouselWrapper {
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
     }
 
     .carouselArrow {
-        width: 30px;
-        height: 30px;
-        font-size: 1.1rem;
+        width: 55px;
+        height: 55px;
+        font-size: 1.9rem;
     }
 
     .testimonialCard {
-        max-width: 85%;
-        margin: 0 auto;
+        max-width: 75%;
+        padding: 35px;
+    }
+
+    .mobileArrowsWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
     }
 }
