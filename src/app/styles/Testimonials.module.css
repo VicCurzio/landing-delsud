@@ -24,6 +24,12 @@
     display: flex;
     flex-direction: column;
     text-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonialCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .avatarWrapper {
@@ -34,6 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .avatar {
@@ -73,12 +80,14 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .carouselArrow:hover {
     background-color: #006666;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .mobileCarouselWrapper {
