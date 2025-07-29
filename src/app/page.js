@@ -1,5 +1,6 @@
 import ContentSection from "./components/ContentSection";
 import FAQ from "./components/Faq";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import InfoBanner from "./components/InfoBanner";
 import Navbar from "./components/Navbar";
@@ -17,6 +18,7 @@ export default function Home() {
         <Testimonials />
         <FAQ />
         <InfoBanner />
+        <Footer />
       </main>
     </>
   );

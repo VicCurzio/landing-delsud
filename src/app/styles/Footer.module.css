@@ -1,0 +1,170 @@
+/* src/styles/Footer.module.css */
+.footerContainer {
+    background-color: #2a2a2a;
+    /* Fondo oscuro según la imagen */
+    color: #fff;
+    padding: 110px 0 90px 0;
+    font-family: 'Inter', sans-serif;
+    /* O la fuente que estés usando */
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-between;
+    gap: 40px;
+    /* Espacio entre columnas */
+}
+
+.logoSection {
+    display: flex;
+    /* Centra verticalmente el cuadrado y el texto */
+    gap: 10px;
+    /* Espacio entre el cuadrado y el texto */
+    flex: 4 1;
+    /* Ocupa el espacio disponible */
+    min-width: 180px;
+    /* Ancho mínimo para la sección del logo */
+    /* Remueve align-items: flex-start; si lo tenías, ahora es center para el logo */
+}
+
+.logo-rectangle {
+    width: 20px;
+    /* Tamaño del cuadrado */
+    height: 20px;
+    background-color: white;
+    /* Color primario para el cuadrado */
+    border-radius: 5px;
+    margin-top: 2px;
+    /* Bordes redondeados */
+}
+
+.bussines {
+    /* Esta clase para el h1 del logo del footer */
+    margin: 0;
+    /* Remueve el margen por defecto del h1 */
+    font-size: 20px;
+    /* Ajusta el tamaño de fuente según el Navbar */
+    color: white;
+    /* El texto del logo en el footer es blanco */
+    font-family: 'Montserrat', sans-serif;
+    /* Asegúrate de importar esta fuente si no lo has hecho globalmente */
+}
+
+.menuSection,
+.contactSection {
+    flex: 1;
+    /* Ocupa el espacio disponible */
+    min-width: 150px;
+    /* Ancho mínimo para estas secciones */
+}
+
+.menuSection h3,
+.contactSection h3 {
+    /* Color de resaltado para los títulos */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.menuSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuSection li {
+    margin-bottom: 15px;
+}
+
+.menuSection a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.menuSection a:hover {
+    color: var(--primary-color);
+}
+
+.contactSection p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.socialIcon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.socialIcon svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.socialIcon:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+    }
+
+    .logoSection {
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .menuSection ul {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContainer {
+        padding: 65px 0 100px 50px;
+    }
+
+    .socialIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .socialIcon svg {
+        width: 29px;
+        height: 25px;
+    }
+
+    .bussines {
+        /* Ajusta el tamaño de la fuente para el logo en móviles si es necesario */
+        font-size: 18px;
+    }
+}
