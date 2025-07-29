@@ -1,4 +1,3 @@
-// components/TestimonialsSection.js
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -69,20 +68,20 @@ export default function TestimonialsSection() {
                         testimonialText={testimonials[currentTestimonialIndex].testimonialText}
                     />
                     <div className={styles.mobileArrowsWrapper}>
-                    <button
-                        className={styles.carouselArrow}
-                        onClick={showPrevTestimonial}
-                        aria-label="Testimonio anterior"
-                    >
-                        &larr;
-                    </button>
-                    <button
-                        className={styles.carouselArrow}
-                        onClick={showNextTestimonial}
-                        aria-label="Siguiente testimonio"
-                    >
-                        &rarr;
-                    </button>
+                        <button
+                            className={styles.carouselArrow}
+                            onClick={showPrevTestimonial}
+                            aria-label="Testimonio anterior"
+                        >
+                            &larr;
+                        </button>
+                        <button
+                            className={styles.carouselArrow}
+                            onClick={showNextTestimonial}
+                            aria-label="Siguiente testimonio"
+                        >
+                            &rarr;
+                        </button>
                     </div>
                 </div>
             ) : (
