@@ -116,11 +116,6 @@
         font-size: 1.1rem;
     }
 
-    .accordionIcon {
-        width: 30px;
-        height: 30px;
-    }
-
     .accordionContent {
         padding: 0 20px;
     }
@@ -150,11 +145,6 @@
 
     .accordionQuestion {
         font-size: 1rem;
-    }
-
-    .accordionIcon {
-        width: 25px;
-        height: 25px;
     }
 
     .accordionContent {
