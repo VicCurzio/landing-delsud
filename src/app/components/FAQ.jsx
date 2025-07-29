@@ -2,41 +2,10 @@
 
 import { useState } from 'react';
 import styles from '../styles/FAQ.module.css';
+import AccordionItem from './AccordionItem';
 
-const ArrowUpIcon = () => (
-    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="30" height="30" rx="15" fill="#0AAA9D" fillOpacity="0.3" />
-        <path d="M10 16L15 11L20 16" stroke="#0AAA9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-);
-
-const ArrowDownIcon = () => (
-    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="30" height="30" rx="15" fill="#0AAA9D" fillOpacity="0.3" />
-        <path d="M10 14L15 19L20 14" stroke="#0AAA9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-);
-
-function AccordionItem({ question, answer, isOpen, toggleAccordion }) {
-    return (
-        <div className={`${styles.accordionItem} ${isOpen ? styles.active : ''}`}>
-            <button className={styles.accordionHeader} onClick={toggleAccordion}>
-                <h3 className={styles.accordionQuestion}>{question}</h3>
-                <span className={styles.accordionIcon}>
-                    {isOpen ? <ArrowUpIcon /> : <ArrowDownIcon />}
-                </span>
-            </button>
-            {isOpen && (
-                <div className={styles.accordionContent}>
-                    <p className={styles.accordionText}>{answer}</p>
-                </div>
-            )}
-        </div>
-    );
-}
-
-export default function FAQ() {
-    const [openIndex, setOpenIndex] = useState(null);
+export default function FAQSection() {
+    const [openIndices, setOpenIndices] = useState([]);
 
     const faqs = [
         {
@@ -72,7 +41,11 @@ export default function FAQ() {
     ];
 
     const handleToggle = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
+        if (openIndices.includes(index)) {
+            setOpenIndices(openIndices.filter(i => i !== index));
+        } else {
+            setOpenIndices([...openIndices, index]);
+        }
     };
 
     return (
@@ -87,7 +60,7 @@ export default function FAQ() {
                         key={faq.id}
                         question={faq.question}
                         answer={faq.answer}
-                        isOpen={openIndex === index}
+                        isOpen={openIndices.includes(index)}
                         toggleAccordion={() => handleToggle(index)}
                     />
                 ))}
