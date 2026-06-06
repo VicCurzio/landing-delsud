@@ -24,7 +24,7 @@ export default function Navbar() {
         <header className={styles['navbar-container']}>
             <div className={styles['navbar-logo-wrapper']}>
                 <div className={styles['logo-rectangle']}></div>
-                <h1>LOGO EMPRESA</h1>
+                <h1>Delsud</h1>
             </div>
 
             <button className={styles['hamburger-menu']} onClick={toggleMenu} aria-expanded={isMenuOpen} aria-controls="mobile-nav-items">
@@ -35,9 +35,9 @@ export default function Navbar() {
 
             <nav className={`${styles['navbar-nav']} ${isMenuOpen ? styles['navbar-nav-open'] : ''}`} id="mobile-nav-items">
                 <ul className={styles['navbar-menu']}>
-                    <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Item 1</Link></li>
-                    <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Item 2</Link></li>
-                    <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Item 3</Link></li>
+                    <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Inicio</Link></li>
+                    <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Servicios</Link></li>
+                    <li><Link href="#" onClick={() => setIsMenuOpen(false)}>Contacto</Link></li>
                 </ul>
 
                 <div className={styles['divider']}></div>

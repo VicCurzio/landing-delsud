@@ -10,33 +10,33 @@ export default function FAQ() {
     const faqs = [
         {
             id: 1,
-            question: '¿Pregunta frecuente 1?',
-            answer: 'Lorem ipsum dolor sit amet consectetur. Ut quam lacus est feugiat. At at velit nullam sollicitudin tempor eu scelerisque.. Nullam purus in vitae sed diam urna nulla augue ac..'
+            question: '¿Qué tipo de soluciones ofrece Delsud?',
+            answer: 'Ofrecemos soluciones biotecnológicas y asesoramiento técnico para optimizar la producción agrícola, incluyendo desarrollo de cultivos mejorados, bioinsumos y sistemas de monitoreo inteligente.'
         },
         {
             id: 2,
-            question: '¿Pregunta frecuente 2?',
-            answer: 'Lorem ipsum dolor sit amet consectetur. Commodo cras sit diam viverra phasellus massa lorem suspendisse venenatis.. Amet laoreet accumsan egestas egestas erat.. Nisi a curabitur in ut habitant molestie euismod elit.. Venenatis lacus dui ipsum gravida fermentum platea scelerisque.'
+            question: '¿Cómo puedo contactar con el equipo de Delsud?',
+            answer: 'Podés contactarnos a través del formulario en nuestra web, por correo electrónico o siguiéndonos en nuestras redes sociales. Te responderemos a la brevedad.'
         },
         {
             id: 3,
-            question: '¿Pregunta frecuente 3?',
-            answer: 'Lorem ipsum dolor sit amet consectetur. Mauris mauris ipsum sit egestas in.. Velit vitae eget pharetra adipiscing ut sit egestas condimentum.. Praesent enim ullamcorper ultrices est. Duis pellentesque mi ultrices sit vel.. Consequat ut velit id mi in..'
+            question: '¿Ofrecen servicios de asesoramiento personalizado?',
+            answer: 'Sí, contamos con un equipo de especialistas que realiza visitas técnicas y elabora planes personalizados según las necesidades específicas de cada productor.'
         },
         {
             id: 4,
-            question: '¿Pregunta frecuente 4?',
-            answer: 'Lorem ipsum dolor sit amet consectetur. Ut quam lacus est feugiat. At at velit nullam sollicitudin tempor eu scelerisque.. Nullam purus in vitae sed diam urna nulla augue ac..'
+            question: '¿En qué regiones tienen presencia?',
+            answer: 'Actualmente operamos en toda la región pampeana y estamos expandiendo nuestra cobertura al norte del país. Consultanos por tu zona.'
         },
         {
             id: 5,
-            question: '¿Pregunta frecuente 5?',
-            answer: 'Lorem ipsum dolor sit amet consectetur. Commodo cras sit diam viverra phasellus massa lorem suspendisse venenatis.. Amet laoreet accumsan egestas egestas erat.. Nisi a curabitur in ut habitant molestie euismod elit.. Venenatis lacus dui ipsum gravida fermentum platea scelerisque.'
+            question: '¿Cuál es el plazo para ver resultados con sus productos?',
+            answer: 'Los resultados varían según el cultivo y las condiciones, pero nuestros clientes suelen observar mejoras significativas en la primera temporada de aplicación.'
         },
         {
             id: 6,
-            question: '¿Pregunta frecuente 6?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            question: '¿Tienen programas de capacitación para productores?',
+            answer: 'Sí, realizamos capacitaciones periódicas y talleres prácticos para que los productores puedan aprovechar al máximo nuestras soluciones tecnológicas.'
         }
     ];
 

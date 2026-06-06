@@ -5,9 +5,9 @@ export default function InfoBanner() {
         <section className={styles.infoBannerContainer}>
             <div className={styles.content}>
                 <p>
-                    Lorem <span className={styles.primaryColor}>ipsum dolor sit amet consectetur</span> aliquet imperdiet <span className={styles.primaryColor}>penatibus donec velit.</span>
+                    Sumate al futuro de la agricultura con <span className={styles.primaryColor}>soluciones biotecnológicas</span> diseñadas para <span className={styles.primaryColor}>potenciar tus cultivos.</span>
                 </p>
-                <button className={styles.button}>Esto es un botón</button>
+                <button className={styles.button}>Contactanos</button>
             </div>
         </section>
     );

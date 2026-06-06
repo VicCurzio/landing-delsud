@@ -7,10 +7,10 @@ export default function ContentSection() {
     return (
         <section className={styles.contentSectionContainer}>
             <p className={styles.textContent}>
-                <span className={`${styles.primaryColor} ${styles.boldText}`}>Lorem ipsum dolor sit amet consectetur
-                </span> aliquet imperdiet
-                <span className={styles.boldText}> penatibus donec velit.</span> A faucibus eget et vulputate dapibus congue enim massa.. Sem semper
-                odio volutpat<span className={`${styles.primaryColor} ${styles.boldText}`}> risus platea nulla diam id dis..</span>
+                <span className={`${styles.primaryColor} ${styles.boldText}`}>En Delsud combinamos ciencia y tecnología
+                </span> para potenciar el rendimiento de los cultivos.
+                <span className={styles.boldText}> Nuestro equipo de investigadores</span> trabaja en el desarrollo de
+                soluciones innovadoras<span className={`${styles.primaryColor} ${styles.boldText}`}> para una agricultura más sustentable.</span>
             </p>
 
             <Image
@@ -22,7 +22,7 @@ export default function ContentSection() {
             />
 
             <h2 className={styles.sectionTitle}>
-                Esto <span className={`${styles.primaryColor} ${styles.WeightText}`}>titula</span> una sección
+                Soluciones que <span className={`${styles.primaryColor} ${styles.WeightText}`}>impulsan</span> el agro
             </h2>
 
             <CardsSection />

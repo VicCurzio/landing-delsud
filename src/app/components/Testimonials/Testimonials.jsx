@@ -13,22 +13,22 @@ export default function Testimonials() {
             id: 1,
             avatarSrc: '/daniel.png',
             name: 'Daniel',
-            company: 'Empresa 1',
-            testimonialText: 'Lorem ipsum dolor sit amet consectetur. Ut quam lacus est feugiat. At at velit nullam sollicitudin tempor eu scelerisque.. Nullam purus in vitae sed diam urna nulla augue ac..'
+            company: 'Agropecuaria San Lorenzo',
+            testimonialText: 'Trabajar con Delsud transformó nuestra forma de producir. Sus soluciones nos permitieron aumentar el rendimiento de nuestros cultivos en un 30% durante la primera temporada.'
         },
-        {
+            {
             id: 2,
             avatarSrc: '/franco.png',
             name: 'Franco',
-            company: 'Empresa 2',
-            testimonialText: 'Lorem ipsum dolor sit amet consectetur. Commodo cras sit diam viverra phasellus massa lorem suspendisse venenatis.. Amet laoreet accumsan egestas egestas erat.. Nisi a curabitur in ut habitant molestie euismod elit.. Venenatis lacus dui ipsum gravida fermentum platea scelerisque.'
+            company: 'Campos del Sur S.A.',
+            testimonialText: 'El equipo de Delsud nos acompañó en todo el proceso con asesoramiento técnico de primer nivel. Los resultados superaron ampliamente nuestras expectativas.'
         },
         {
             id: 3,
             avatarSrc: '/eugenia.png',
             name: 'Eugenia',
-            company: 'Empresa 3',
-            testimonialText: 'Lorem ipsum dolor sit amet consectetur. Mauris mauris ipsum sit egestas in.. Velit vitae eget pharetra adipiscing ut sit egestas condimentum.. Praesent enim ullamcorper ultrices est. Duis pellentesque mi ultrices sit vel.. Consequat ut velit id mi in..'
+            company: 'Cooperativa Agrícola Norte',
+            testimonialText: 'La calidad de sus productos y el soporte técnico constante hacen de Delsud un socio estratégico para nuestra cooperativa. Muy recomendables.'
         }
     ];
 

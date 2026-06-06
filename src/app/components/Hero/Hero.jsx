@@ -15,8 +15,8 @@ export default function Hero() {
             />
             <div className={styles.heroContent}>
                 <h1>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit <span className={styles.primaryColor}>interdum, ac aliquet odio mattis.</span>
+                    Delsud: innovación que transforma el campo.
+                    Desarrollamos soluciones biotecnológicas para una agricultura <span className={styles.primaryColor}>más eficiente y sostenible.</span>
                 </h1>
             </div>
         </section>
