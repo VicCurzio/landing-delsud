@@ -26,7 +26,7 @@ export default function FAQ() {
         {
             id: 4,
             question: '¿En qué regiones tienen presencia?',
-            answer: 'Actualmente operamos en toda la región pampeana y estamos expandiendo nuestra cobertura al norte del país. Consultanos por tu zona.'
+            answer: 'Trabajamos con productores agropecuarios en distintas zonas del país y seguimos ampliando nuestra cobertura. Consultanos por tu zona para conocer el alcance actual.'
         },
         {
             id: 5,

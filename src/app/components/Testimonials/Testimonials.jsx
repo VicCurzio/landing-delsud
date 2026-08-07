@@ -13,22 +13,22 @@ export default function Testimonials() {
             id: 1,
             avatarSrc: '/daniel.png',
             name: 'Daniel',
-            company: 'Agropecuaria San Lorenzo',
-            testimonialText: 'Trabajar con Delsud transformó nuestra forma de producir. Sus soluciones nos permitieron aumentar el rendimiento de nuestros cultivos en un 30% durante la primera temporada.'
+            company: 'Productor agropecuario',
+            testimonialText: 'Trabajar con Delsud cambió nuestra forma de producir. Su acompañamiento técnico se nota en el estado de los cultivos desde la primera aplicación.'
         },
             {
             id: 2,
             avatarSrc: '/franco.png',
             name: 'Franco',
-            company: 'Campos del Sur S.A.',
-            testimonialText: 'El equipo de Delsud nos acompañó en todo el proceso con asesoramiento técnico de primer nivel. Los resultados superaron ampliamente nuestras expectativas.'
+            company: 'Ingeniero agrónomo',
+            testimonialText: 'El equipo de Delsud nos acompaña en todo el proceso con asesoramiento técnico de primer nivel. Es un gusto trabajar con gente que conoce bien el campo.'
         },
         {
             id: 3,
             avatarSrc: '/eugenia.png',
             name: 'Eugenia',
-            company: 'Cooperativa Agrícola Norte',
-            testimonialText: 'La calidad de sus productos y el soporte técnico constante hacen de Delsud un socio estratégico para nuestra cooperativa. Muy recomendables.'
+            company: 'Encargada de cooperativa agrícola',
+            testimonialText: 'La calidad de los productos y el soporte técnico constante hacen de Delsud un socio confiable para nuestra cooperativa. Lo recomendamos sin dudar.'
         }
     ];
 

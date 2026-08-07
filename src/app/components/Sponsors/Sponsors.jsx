@@ -34,7 +34,7 @@ export default function Sponsors() {
     return (
         <section className={styles.sponsorsSectionContainer}>
             <h2 className={styles.sponsorsTitle}>
-                <span className={styles.primaryColor}>Sponsors</span> del proyecto
+                <span className={styles.primaryColor}>Nuestra</span> marca
             </h2>
             {isMobile ? (
                 <SponsorCarousel sponsorLogos={sponsorLogos} />
