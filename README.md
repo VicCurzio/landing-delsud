@@ -1,69 +1,63 @@
-# Landing Page - "Grupo Delsud Challenge"
+# Landing Delsud
 
-Este proyecto es una **Landing Page moderna, optimizada y responsive** desarrollada como parte de la **prueba técnica para el puesto de Frontend Developer en Grupo Delsud**.
+Landing page desarrollada como prueba técnica para el puesto de Frontend
+Developer en Grupo Delsud. Presenta la propuesta, características, testimonios,
+preguntas frecuentes y sponsors, en una sola página pensada mobile-first.
 
-## 🚀 Descripción del Proyecto
+En producción: <https://landing-delsud-challenge.vercel.app/>
 
-Landing page desarrollada con **Next.js v15** que presenta información, características, testimonios, preguntas frecuentes y sección de sponsors.  
-Fue construida siguiendo buenas prácticas de **componentización, optimización de rendimiento** y **experiencia de usuario mobile-first**.
+## Requisitos
 
-## ✨ Características Principales
-- **Componentes Reutilizables:** Estructura modular basada en componentes de React para facilitar mantenibilidad y escalabilidad.
-- **Diseño Responsive:** Adaptabilidad completa a mobile, tablet y desktop mediante **CSS Modules + Media Queries**.
-- **Optimización de Imágenes:** Uso del componente `next/image` con optimización automática.
-- **CSS Modules:** Encapsulamiento de estilos a nivel de componente, evitando colisiones.
-- **Estructura de Carpetas Clara:** Organización por features/secciones (estructura escalable a producción).
+| | |
+|---|---|
+| Node | 20 o superior |
+| Base de datos | no usa |
+| Servicios externos | ninguno, no hay variables de entorno |
 
-## 🛠️ Tecnologías Utilizadas
-- **Next.js v15.4.4** (Static Site Generation - SSG)
-- **React.js**
-- **CSS Modules**
-- **JavaScript ES6+**
-- **Vercel (Deploy Hosting)**
+## Puesta en marcha (local, en cinco minutos)
 
-## 📂 Estructura del Proyecto
-```
-src/
-└── app/
-    ├── components/        # Componentes reutilizables de la landing
-    ├── styles/             # Estilos en CSS Modules
-    ├── layout.js           # Layout general de la página
-    └── page.js             # Página principal
-```
-
-## 🚀 Cómo Levantarlo Localmente
-1. **Clonar el Repositorio:**
 ```bash
-git clone <URL_DE_TU_REPOSITORIO>
-cd landing-delsud
-```
-
-2. **Instalar Dependencias:**
-```bash
+git clone https://github.com/VicCurzio/landing-delsud.git && cd landing-delsud
 npm install
-# o yarn install / pnpm install / bun install
-```
-
-3. **Ejecutar el Servidor de Desarrollo:**
-```bash
 npm run dev
-# o yarn dev / pnpm dev / bun dev
 ```
 
-4. Abrir el navegador en: [http://localhost:3000](http://localhost:3000)
+Abre en <http://localhost:3000>.
 
-## 🌐 Despliegue en Vercel
-El proyecto está desplegado en **Vercel**, optimizado para aplicaciones Next.js.  
-🔗 **Link al deploy:** [https://landing-delsud-challenge.vercel.app/](https://landing-delsud-challenge.vercel.app/)
+## Verificación
 
-## 📝 Notas Finales
-- Proyecto desarrollado en **menos de 4 días** cumpliendo con todos los lineamientos de la prueba técnica.
-- Código estructurado y preparado para escalabilidad.
-- Consideré buenas prácticas de accesibilidad, SEO básico y rendimiento.
-- Repositorio público en GitHub para revisión.
+No hay suite de tests: es una página estática sin lógica. Lo que corre:
 
----
+```bash
+npm run lint
+npm run build   # que compile es parte de la verificación
+```
 
-📧 **Desarrollador:** Victor Roberto Curzio   
-📬 **Email:** [tu-email](victor.curzio@hotmail.com)   
-🔗 **LinkedIn:** [tu-linkedin](https://www.linkedin.com/in/victor-roberto-curzio/)
+Los dos corren en GitHub Actions en cada push y en cada pull request
+(`.github/workflows/ci.yml`).
+
+## Cómo se despliega
+
+Vercel, conectado al repositorio: cada push a `main` publica. No hay paso
+manual ni workflow de despliegue propio.
+
+## Decisiones
+
+- **Next.js con generación estática.** No hay datos que cambien: el HTML se
+  genera al compilar y llega listo al navegador.
+- **CSS Modules** en vez de una librería de estilos: los estilos quedan
+  encapsulados por componente y no hay forma de que colisionen entre secciones.
+- **Un componente por carpeta**, con su `.module.css` al lado. Un archivo suelto
+  no tiene dónde poner sus estilos sin ensuciar al vecino.
+- **`next/image`** para que las imágenes se sirvan optimizadas y en el tamaño
+  que corresponde a cada pantalla.
+
+## Estructura del código
+
+```text
+src/app/
+  components/     # un componente por carpeta, con su CSS Module
+  styles/         # estilos globales
+  layout.js       # layout general
+  page.js         # la página: compone las secciones
+```

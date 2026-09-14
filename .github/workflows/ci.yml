@@ -1,0 +1,30 @@
+# Verificacion que no se puede saltear.
+#
+# El despliegue lo hace Vercel por su cuenta al pushear a main, asi que esto no
+# publica nada: corre el linter y compila. Es lo que evita enterarse de que algo
+# no compila recien cuando Vercel falla, o peor, cuando alguien abre el sitio.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
