@@ -1,5 +1,7 @@
 # Landing Delsud
 
+[![CI](https://github.com/VicCurzio/landing-delsud/actions/workflows/ci.yml/badge.svg)](https://github.com/VicCurzio/landing-delsud/actions/workflows/ci.yml)
+
 Landing page desarrollada como prueba técnica para el puesto de Frontend
 Developer en Grupo Delsud. Presenta la propuesta, características, testimonios,
 preguntas frecuentes y sponsors, en una sola página pensada mobile-first.
